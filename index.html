@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Bella</div>
+            <button class="menu-btn" onclick="otvoriMeni()">Meni</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#pocetna">Početna</a></li>
+                <li><a href="#onama">O nama</a></li>
+                <li><a href="#meni">Meni</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pocetna" class="hero">
+            <div class="hero-content">
+                <p class="mali-naslov">DOBRO DOŠLI</p>
+                <h1>Restoran Bella</h1>
+                <p> Uživajte u ukusnoj hrani, prijatnoj atmosferi i kvalitetnoj usluzi.</p>
+                <a href="#meni" class="dugme">Pogledaj meni</a>
+            </div>
+
+        </section>
+
+        <section id="onama" class="onama">
+            <div class="section-title">
+                <p class="mali-naslov">NAŠA PRIČA</p>
+                <h2>O nama</h2>
+            </div>
+
+            <div class="onama-sadrzaj">
+                <div class="tekst">
+                    <p>Restoran Bella je mesto gde se kvalitetna hrana i prijatna atmosfera spajaju u jedno.</p>
+                    <p>Naš restoran je nastao sa željom da gostima ponudimo ukusna i pažljivo pripremljena jela.</p>
+                    <p>Koristimo sveže sastojke i trudimo se da svaki gost iz našeg restorana ode zadovoljan.</p>
+                </div>
+
+                <div class="info-kutija">
+                    <h3>Zašto Bella?</h3>
+                    <p>Sveži sastojci</p>
+                    <p>Kvalitetna usluga</p>
+                    <p>Prijatna atmosfera</p>
+                    <p>Tradicionalni ukusi</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="meni" class="meni">
+            <div class="section-title">
+                <p class="mali-naslov">NAŠA PONUDA</p>
+                <h2>Meni</h2>
+            </div>
+
+
+            <div class="meni-kategorija">
+                <h3>Glavna jela</h3>
+
+                <div class="jela">
+                    <div class="jelo">
+                        <div>
+                            <h4>Pizza Bella</h4>
+                            <p>Paradajz sos, mocarela, šunka i pečurke</p>
+                        </div>
+                        <span>850 RSD</span>
+                    </div>
+
+                    <div class="jelo">
+                        <div>
+                            <h4>Piletina sa povrćem</h4>
+                            <p>Grilovana piletina, povrće i krompir</p>
+                        </div>
+                        <span>950 RSD</span>
+                    </div>
+
+                    <div class="jelo">
+                        <div>
+                            <h4>Pasta Bella</h4>
+                            <p>Testenina u kremastom sosu sa piletinom</p>
+                        </div>
+                        <span>790 RSD</span>
+                    </div>
+
+                    <div class="jelo">
+                        <div>
+                            <h4>Biftek</h4>
+                            <p>Biftek sa domaćim krompirom i povrćem</p>
+                        </div>
+                        <span>1.650 RSD</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meni-kategorija">
+                <h3>Dezerti</h3>
+                <div class="jela">
+                    <div class="jelo">
+                        <div>
+                            <h4>Čokoladna torta</h4>
+                            <p>Čokoladni kolač sa kremom</p>
+                        </div>
+                        <span>450 RSD</span>
+                    </div>
+                    <div class="jelo">
+                        <div>
+                            <h4>Palačinke</h4>
+                            <p>Palačinke sa čokoladom i lešnikom</p>
+                        </div>
+                        <span>400 RSD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="kontakt">
+            <div class="section-title">
+                <p class="mali-naslov">JAVITE NAM SE</p>
+                <h2>Kontakt</h2>
+            </div>
+            <div class="kontakt-sadrzaj">
+                <div class="kontakt-info">
+                    <h3>Restoran Bella</h3>
+                    <p>Glavna ulica 25, Nis</p>
+                    <p>+381 11 123 4567</p>
+                    <p>info@bella.rs</p>
+                    <h4>Radno vreme</h4>
+                    <p>Ponedeljak - Nedelja</p>
+                    <p>09:00 - 23:00</p>
+                </div>
+                <form id="kontaktForma">
+                    <label for="ime"> Ime i prezime</label>
+                    <input type="text" id="ime" placeholder="Unesite ime i prezime">
+
+                    <label for="email"> Email </label>
+                    <input type="email" id="email" placeholder="Unesite email">
+
+                    <label for="poruka"> Poruka</label>
+                    <textarea id="poruka" placeholder="Unesite poruku"></textarea>
+
+                    <button type="submit" class="dugme"> Pošalji </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Restoran Bella</p>
+        <p>Sva prava zadržana.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
